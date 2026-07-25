@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card Database &mdash; Geopals</title>
+<meta name="description" content="Search and filter every card in the Geopals Trading Card Game.">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="assets/img/favicon.svg">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">GP</span>
+    <span class="brand-name">Geopals</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="cards.html" class="is-current">Card Database</a>
+    <a href="index.html#videos">Videos</a>
+    <a href="index.html#learn">How to Play</a>
+  </nav>
+</header>
+
+<main class="db">
+
+  <div class="db-head">
+    <h1>Card Database</h1>
+    <p class="section-lede">Search by name or text, then narrow with the filters.</p>
+  </div>
+
+  <div class="db-controls">
+    <div class="search-wrap">
+      <input type="search" id="search" placeholder="Search cards&hellip;" autocomplete="off"
+             aria-label="Search cards by name or description">
+    </div>
+    <!-- Filter selects are generated from whatever fields exist in the data. -->
+    <div class="filters" id="filters"></div>
+    <div class="db-toolbar">
+      <label class="sort-wrap">
+        Sort
+        <select id="sort" aria-label="Sort cards">
+          <option value="id-asc">Card number</option>
+          <option value="name-asc">Name (A&ndash;Z)</option>
+          <option value="name-desc">Name (Z&ndash;A)</option>
+          <option value="rarity-asc">Rarity</option>
+          <option value="region-asc">Region</option>
+        </select>
+      </label>
+      <button type="button" id="reset" class="btn btn-ghost btn-sm">Clear filters</button>
+      <span class="count" id="count" role="status"></span>
+    </div>
+  </div>
+
+  <div id="results" class="card-grid" aria-live="polite"></div>
+  <p id="empty" class="empty" hidden>No cards match those filters.</p>
+
+</main>
+
+<!-- Card detail dialog -->
+<dialog id="detail" class="detail">
+  <button type="button" class="detail-close" id="detail-close" aria-label="Close">&times;</button>
+  <div class="detail-body" id="detail-body"></div>
+</dialog>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Geopals Trading Card Game.</p>
+  <p class="muted">geopals.com.au</p>
+</footer>
+
+<!-- Data first, then the app. Loading data via <script> (not fetch) means this page
+     also works when opened straight off disk, with no local web server. -->
+<script src="data/cards.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/db-browser.js"></script>
+<script src="assets/js/cards.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* Geopals — site styles.
+   All colours live in the :root block below; retheme the whole site from there. */
+
+:root {
+  --bg:        #0e1116;
+  --bg-raised: #161b23;
+  --bg-sunk:   #0a0d12;
+  --line:      #263040;
+  --text:      #e8edf5;
+  --text-dim:  #97a3b6;
+  --accent:    #35c39a;
+  --accent-2:  #f2b23e;
+  --accent-ink:#06251c;
+  --radius:    12px;
+  --maxw:      1140px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; font-weight: 650; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h3 { font-size: 1.1rem; }
+p  { margin: 0 0 1rem; }
+a  { color: var(--accent); }
+
+.muted    { color: var(--text-dim); }
+.note     { color: var(--text-dim); font-size: .9rem; font-style: italic; }
+.eyebrow  { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem;
+            color: var(--accent); font-weight: 600; margin-bottom: .75rem; }
+
+/* ---------- header ---------- */
+
+.site-header {
+  display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+  padding: 1rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+  background: rgba(14, 17, 22, .85);
+  backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 20;
+}
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--text); }
+.brand-mark {
+  display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px;
+  background: var(--accent); color: var(--accent-ink); font-weight: 800; font-size: .95rem;
+}
+.brand-name { font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em; }
+.site-nav { display: flex; gap: 1.5rem; margin-left: auto; flex-wrap: wrap; }
+.site-nav a { color: var(--text-dim); text-decoration: none; font-size: .95rem; font-weight: 500; }
+.site-nav a:hover { color: var(--text); }
+.site-nav a.is-current { color: var(--text); }
+
+/* ---------- layout ---------- */
+
+main { display: block; }
+.section {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+}
+.section-lede { color: var(--text-dim); max-width: 60ch; margin-top: -.25rem; }
+
+.hero {
+  background:
+    radial-gradient(1100px 480px at 18% -10%, rgba(53,195,154,.20), transparent 60%),
+    radial-gradient(900px 420px at 85% 0%, rgba(242,178,62,.13), transparent 60%),
+    var(--bg-sunk);
+  border-bottom: 1px solid var(--line);
+}
+.hero-inner {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: clamp(4rem, 11vw, 8rem) clamp(1rem, 4vw, 2.5rem);
+}
+.lede { font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--text-dim); max-width: 58ch; }
+.hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 2rem; }
+
+.grid-3 { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.card-panel {
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.5rem;
+}
+.card-panel p:last-child { margin-bottom: 0; }
+
+.steps { padding-left: 1.25rem; max-width: 65ch; }
+.steps li { margin-bottom: .75rem; }
+
+.region-list { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.region-list li {
+  border: 1px solid var(--line); border-radius: 999px; padding: .45rem 1.1rem;
+  font-size: .92rem; color: var(--text-dim); background: var(--bg-raised);
+}
+
+.type-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 1.5rem; }
+.type {
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.1rem 1.2rem;
+}
+.type strong { display: block; font-size: 1rem; }
+.type span { display: block; color: var(--accent); font-size: .78rem; font-weight: 600;
+             text-transform: uppercase; letter-spacing: .07em; margin: .2rem 0 .5rem; }
+.type p { color: var(--text-dim); font-size: .88rem; margin: 0; }
+
+.cta { text-align: center; border-bottom: 0; }
+.cta p { color: var(--text-dim); }
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-block; padding: .7rem 1.35rem; border-radius: 999px;
+  font-weight: 600; font-size: .95rem; text-decoration: none; cursor: pointer;
+  border: 1px solid transparent; font-family: inherit;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: #46d4ab; }
+.btn-ghost { border-color: var(--line); color: var(--text); background: transparent; }
+.btn-ghost:hover { border-color: var(--text-dim); }
+.btn-sm { padding: .45rem .9rem; font-size: .85rem; }
+
+/* ---------- videos ---------- */
+
+.video-card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.video-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.video-card h3, .video-card p { padding: 0 1.15rem; }
+.video-card h3 { margin-top: 1rem; }
+.video-card p { color: var(--text-dim); font-size: .92rem; padding-bottom: 1.15rem; }
+.video-thumb {
+  aspect-ratio: 16 / 9; display: grid; place-items: center;
+  background: linear-gradient(135deg, #1d2733, #121820);
+  border-bottom: 1px solid var(--line);
+}
+.play {
+  width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent); color: var(--accent-ink); font-size: 1.1rem; padding-left: 4px;
+}
+
+/* ---------- card database ---------- */
+
+.db { max-width: var(--maxw); margin: 0 auto; padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 2.5rem) 4rem; }
+.db-head h1 { margin-bottom: .25rem; }
+
+.db-controls {
+  position: sticky; top: 67px; z-index: 10;
+  background: var(--bg); padding: 1.25rem 0 1rem;
+  border-bottom: 1px solid var(--line); margin-bottom: 1.75rem;
+}
+
+.search-wrap input {
+  width: 100%; padding: .85rem 1.1rem; font-size: 1rem; font-family: inherit;
+  color: var(--text); background: var(--bg-raised);
+  border: 1px solid var(--line); border-radius: 10px;
+}
+.search-wrap input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+
+.filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .85rem; }
+.filters label { display: flex; flex-direction: column; gap: .2rem; font-size: .72rem;
+                 text-transform: uppercase; letter-spacing: .08em; color: var(--text-dim); }
+.filters select, #sort {
+  font-family: inherit; font-size: .9rem; color: var(--text);
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: 8px; padding: .5rem .7rem; min-width: 140px;
+}
+
+.db-toolbar { display: flex; align-items: flex-end; gap: 1rem; flex-wrap: wrap; margin-top: .85rem; }
+.sort-wrap { display: flex; flex-direction: column; gap: .2rem; font-size: .72rem;
+             text-transform: uppercase; letter-spacing: .08em; color: var(--text-dim); }
+.count { margin-left: auto; color: var(--text-dim); font-size: .9rem; }
+
+.card-grid {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
+.card-tile {
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; cursor: pointer; text-align: left; padding: 0;
+  font-family: inherit; color: inherit;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.card-tile:hover { border-color: var(--accent); transform: translateY(-3px); }
+.card-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* 163/222 is the exact aspect of the master card art (1630x2220), so tiles
+   never letterbox or crop. `contain` keeps the printed border intact. */
+.card-img {
+  width: 100%; aspect-ratio: 163 / 222; object-fit: contain; display: block;
+  background: var(--bg-sunk);
+}
+.card-meta { padding: .75rem .85rem .9rem; }
+.card-name { font-weight: 650; font-size: .95rem; line-height: 1.3; margin-bottom: .3rem; }
+.card-sub  { color: var(--text-dim); font-size: .78rem; }
+
+.pill {
+  display: inline-block; font-size: .68rem; font-weight: 600; letter-spacing: .04em;
+  text-transform: uppercase; padding: .16rem .5rem; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--text-dim); margin-right: .3rem;
+}
+.pill-rare   { border-color: var(--accent-2); color: var(--accent-2); }
+.pill-common { border-color: var(--line); }
+.pill-holo   { border-color: #b98cf5; color: #c9a6fa; }
+
+.empty { text-align: center; color: var(--text-dim); padding: 3rem 0; }
+
+/* ---------- detail dialog ---------- */
+
+.detail {
+  border: 1px solid var(--line); border-radius: 16px; background: var(--bg-raised);
+  color: var(--text); max-width: 720px; width: calc(100% - 2rem); padding: 0;
+}
+.detail::backdrop { background: rgba(0,0,0,.7); }
+.detail-close {
+  position: absolute; top: .5rem; right: .75rem; background: none; border: 0;
+  color: var(--text-dim); font-size: 1.8rem; line-height: 1; cursor: pointer; padding: .25rem;
+}
+.detail-close:hover { color: var(--text); }
+.detail-body { display: grid; grid-template-columns: 240px 1fr; gap: 1.75rem; padding: 1.75rem; }
+.detail-body img { width: 100%; border-radius: 10px; background: var(--bg-sunk); }
+.detail-body dl { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1rem; margin: 1rem 0 0; font-size: .92rem; }
+.detail-body dt { color: var(--text-dim); }
+.detail-body dd { margin: 0; }
+
+@media (max-width: 620px) {
+  .detail-body { grid-template-columns: 1fr; }
+  .db-controls { position: static; }
+  .count { margin-left: 0; }
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 2.5rem clamp(1rem, 4vw, 2.5rem);
+  color: var(--text-dim); font-size: .9rem;
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+}
+.site-footer p { margin: 0; }

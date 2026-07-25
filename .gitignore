@@ -1,0 +1,10 @@
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Local scratch — never publish working files to the public site
+/scratch/
+*.local.*
