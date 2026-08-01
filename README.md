@@ -35,12 +35,15 @@ CNAME                   custom domain for GitHub Pages
 
 The browser engine doesn't know anything about cards. To add a second database:
 
-1. Copy `cards.html` → `locations.html`, change the title and the last
-   `<script>` to `assets/js/locations.js`.
-2. Copy `assets/js/cards.js` → `assets/js/locations.js` and edit the config:
+1. Copy `cards.html` → `lore.html`, change the title and the last
+   `<script>` to `assets/js/lore.js`.
+2. Copy `assets/js/cards.js` → `assets/js/lore.js` and edit the config:
    which fields are searchable, which become filter dropdowns, what shows in
    the detail panel.
-3. Drop the rows in `data/locations.js` as `window.GEOPALS_LOCATIONS = [...]`.
+3. The rows are already published to `data/lore-building.js` as
+   `window.GEOPALS_LORE = [...]` — 48 public rows, every one carrying a `type`
+   of `character`, `location`, `artifact`, `event` or `chapter`. Make `type` a
+   facet and one page covers the whole world bible.
 
 Leave `facets` out of the config and the filter dropdowns are worked out from
 the data automatically — useful while a schema is still changing.
