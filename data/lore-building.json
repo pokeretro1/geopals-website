@@ -6,15 +6,15 @@
         "aliases":  "Malor",
         "era":  "Ancient",
         "region":  "",
-        "kind":  "Ancient Force",
+        "kind":  "Geopal",
         "role":  "The Bringer of Destruction",
-        "status":  "Disappeared",
+        "status":  "Sealed",
         "cardId":  "",
         "awakensFrom":  "",
         "awakensTo":  "",
         "firstAppearance":  "",
-        "summary":  "An ancient destructive force that sought control over the powers sustaining the Geopal world. Opposed by the Chasers. Vanished at the end of the ancient conflict; the elders believe it will return.",
-        "canonNotes":  "Mallathork is canon. Malor is recorded as an older variant of the name surviving in early oral tradition. No card exists for Mallathork."
+        "summary":  "An immensely powerful and malevolent Geopal who sought complete control of the Geoverse. Understanding that controlling individual Geopals would never be enough, he targeted the two sources of the world’s power: he trapped the Good-Being in another dimension, then enslaved Geopals to mine the original Core Orb, growing stronger as it weakened. Defeated by the Eight Chasers in the Great War and sealed - not destroyed - within divided Orb husks.",
+        "canonNotes":  "Confirmed canon: Mallathork is a Geopal, not a formless force. He was contained rather than killed, so his consciousness may survive."
     },
     {
         "id":  "CH-BEAKABOU",
@@ -31,7 +31,7 @@
         "awakensTo":  "",
         "firstAppearance":  "",
         "summary":  "Could not save the ancient Forest from destruction, but used the last of its power to conceal the Forest Guardian Orb inside the hollow Banyan stump. Built a treehouse above the hiding place and guarded it. Eventually vanished, though Forest Geopals still report a camouflaged figure moving through the highest treetops.",
-        "canonNotes":  "Matches card #85 (Forest, Legend, Infinity, Style: Chaser)."
+        "canonNotes":  "Confirmed canon: one of the Eight Chasers, awakened by a spiritually empowered Orb sent by the Good-Being, and champion of the Forest region. After the Great War the Chasers carried the eight Core Orb fragments to the new island and became its first guardians. Matches card #85 (Forest, Legend, Infinity, Style: Chaser). SEQUENCE CONFIRMED 2026-08-01 by Aidan: Beakabou is the Forest Chaser. He carried the Forest fragment of the Core Orb to the new island and, when appointed guardian of the Forest region, hid it to protect it. The hiding is an act of guardianship on the new island, not an act of the Great War."
     },
     {
         "id":  "CH-GALSAGE",
@@ -48,7 +48,7 @@
         "awakensTo":  "",
         "firstAppearance":  "",
         "summary":  "An enormous ancient Chaser whose body resembled living stone, with powers tied to vibration and geological force. During the Great Collapse it performed the Song of Silence, raising the Orb\u0027s sanctuary beyond ordinary reach. The act destroyed its physical body, whose remains became the boulders scattered across the Mountain Region.",
-        "canonNotes":  "CANON DECISION: the lore document proposed this role for \u0027Korranok\u0027; card #86 (Galsage) takes precedence because printed cards are the hardest canon. Korranok\u0027s story transfers here in full. The name Korranok remains available for the mountain formation where the Choir Stones lie - unresolved, see LOC-CHOIR-STONES."
+        "canonNotes":  "Confirmed canon: one of the Eight Chasers, awakened by a spiritually empowered Orb sent by the Good-Being, and champion of the Mountain region. After the Great War the Chasers carried the eight Core Orb fragments to the new island and became its first guardians. CANON DECISION: the lore document proposed this role for \u0027Korranok\u0027; card #86 (Galsage) takes precedence because printed cards are the hardest canon. Korranok\u0027s story transfers here in full. The name Korranok remains available for the mountain formation where the Choir Stones lie - unresolved, see LOC-CHOIR-STONES."
     },
     {
         "id":  "CH-METRARK",
@@ -58,14 +58,14 @@
         "era":  "Ancient",
         "region":  "Ocean",
         "kind":  "Chaser",
-        "role":  "Ocean Chaser",
+        "role":  "Ocean Chaser; Titan who raised the new island with Frolick",
         "status":  "Unknown",
         "cardId":  "87",
         "awakensFrom":  "",
         "awakensTo":  "",
         "firstAppearance":  "",
         "summary":  "The Chaser of the Ocean Region. Its role in the ancient conflict and the fate of the Ocean Guardian Orb are not yet written.",
-        "canonNotes":  "Card #87 exists. No lore written yet."
+        "canonNotes":  "Confirmed canon: one of the Eight Chasers, awakened by a spiritually empowered Orb sent by the Good-Being, and champion of the Ocean region. After the Great War the Chasers carried the eight Core Orb fragments to the new island and became its first guardians. Card #87 exists. No lore written yet. Confirmed canon: transformed into a colossal Titan and, with Frolick, raised the new island from the sea - Metrark shaping the waters, currents and foundations. Water and fire cooperating is the founding lesson of the Geoverse: the world was made by opposing forces in balance, not by one dominating the other."
     },
     {
         "id":  "CH-SHARLITAN",
@@ -82,7 +82,7 @@
         "awakensTo":  "",
         "firstAppearance":  "",
         "summary":  "The Chaser of the Shadow Region. Unwritten.",
-        "canonNotes":  "Card #88 exists. No lore written yet."
+        "canonNotes":  "Confirmed canon: one of the Eight Chasers, awakened by a spiritually empowered Orb sent by the Good-Being, and champion of the Shadow region. After the Great War the Chasers carried the eight Core Orb fragments to the new island and became its first guardians. Card #88 exists. No lore written yet."
     },
     {
         "id":  "CH-FROLICK",
@@ -92,14 +92,14 @@
         "era":  "Ancient",
         "region":  "Volcanic",
         "kind":  "Chaser",
-        "role":  "Volcanic Chaser",
+        "role":  "Volcanic Chaser; Titan who raised the new island with Metrark",
         "status":  "Unknown",
         "cardId":  "89",
         "awakensFrom":  "",
         "awakensTo":  "",
         "firstAppearance":  "",
         "summary":  "The Chaser of the Volcanic Region. Unwritten.",
-        "canonNotes":  "Card #89 exists. No lore written yet."
+        "canonNotes":  "Confirmed canon: one of the Eight Chasers, awakened by a spiritually empowered Orb sent by the Good-Being, and champion of the Volcanic region. After the Great War the Chasers carried the eight Core Orb fragments to the new island and became its first guardians. Card #89 exists. No lore written yet. Confirmed canon: transformed into a colossal Titan and, with Metrark, raised the new island - Frolick creating the land, mountains and fertile rock."
     },
     {
         "id":  "CH-GARDEON",
@@ -381,7 +381,7 @@
         "summary":  "Enormous boulders scattered across the Mountain Region - the remains of Galsage\u0027s body after the Song of Silence destroyed it. Mountain Geopals gather around them to train, meditate and listen. Whether they actually contain Galsage\u0027s consciousness is unknown.",
         "image":  "",
         "imageCaption":  "",
-        "canonNotes":  "OPEN NAMING DECISION: the lore document calls these \u0027Korranok\u0027s Choir Stones\u0027. Since Galsage is now the Mountain Chaser, either (a) rename to Galsage\u0027s Choir Stones, or (b) keep Korranok as the name of the mountain formation where the stones lie. Option (b) preserves the name without a second character."
+        "canonNotes":  "SETTLED 2026-08-01 by Aidan: \"Korranok isn\u0027t a thing, the chaser is Galsage.\" The stones are the remains of Galsage, who spent his body performing the Song of Silence during the Great Collapse. Geopals now train and meditate among them. The earlier proposed name \"Korranok\u0027s Choir Stones\" is NOT canon."
     },
     {
         "id":  "LOC-MOUNTAIN-CAVES",
@@ -446,9 +446,9 @@
     {
         "id":  "ART-ORB-FOREST",
         "type":  "artifact",
-        "name":  "The Forest Guardian Orb",
+        "name":  "The Forest Regional Core Orb",
         "region":  "Forest",
-        "kind":  "Guardian Orb",
+        "kind":  "Regional Core Orb",
         "status":  "Protected",
         "sustains":  "Water purity, rivers and lakes, oxygen, vegetation, the health of the Forest ecosystem",
         "hiddenAt":  "LOC-HOLLOW-STUMP",
@@ -457,14 +457,15 @@
         "summary":  "The most fully established of the eight Orbs. Not treasure but effectively an organ of the world - it maintains the natural processes the Forest needs to survive. If its power disappeared, water would stagnate, trees would die, air quality would fall and the region could collapse.",
         "image":  "",
         "imageCaption":  "",
-        "canonNotes":  "The elders tell of a period when the Orb\u0027s light weakened: darkness entered the Forest, rivers dried, trees withered. The ancestors restored it. That story is the warning passed down every generation."
+        "canonNotes":  "Confirmed canon: one of the eight fragments of the original Core Orb, carried to the new island by the Forest Chaser and embedded deep beneath the region. Its energy terraformed the land and shaped the ecosystem and the Geopals adapted to it. Called a \"Guardian Orb\" in earlier drafts. Distinct from a modern Treasure Orb. The elders tell of a period when the Orb\u0027s light weakened: darkness entered the Forest, rivers dried, trees withered. The ancestors restored it. That story is the warning passed down every generation.",
+        "era":  "The Ancient Age"
     },
     {
         "id":  "ART-COMET-FIRST",
         "type":  "artifact",
-        "name":  "The First Comet Orb",
+        "name":  "The First Treasure Orb",
         "region":  "Mystic",
-        "kind":  "Comet Orb",
+        "kind":  "Treasure Orb",
         "status":  "Claimed",
         "sustains":  "",
         "hiddenAt":  "LOC-COMET-CRATER",
@@ -473,7 +474,7 @@
         "summary":  "The glowing Orb Skippy found inside the first Comet crater. Touching it sent energy surging through Skippy\u0027s body and triggered the first Awakening in 5,000 years, transforming Skippy into Lilac.",
         "image":  "",
         "imageCaption":  "",
-        "canonNotes":  "Comet Orbs are distinct from Guardian Orbs. Ancient legend held that Comets could awaken dormant powers in Geopals - the First Comet Orb proved the legend true."
+        "canonNotes":  "Confirmed canon: modern Treasure Orbs are a SEPARATE phenomenon from the Regional Core Orbs. Recorded as \"Comet Orb\" until 2026-08-01; the settled term is Treasure Orb. OPEN: their origin, and whether the comet creates them or merely awakens them."
     },
     {
         "id":  "ART-CHOIR-STONES",
@@ -554,7 +555,7 @@
         "locations":  "LOC-HOLLOW-STUMP,LOC-BEAKABOU-TREEHOUSE",
         "artifacts":  "ART-ORB-FOREST",
         "summary":  "Unable to save the Forest, Beakabou uses the last of its power to conceal the Forest Guardian Orb inside the hollow stump, builds a treehouse above it, and remains as its guardian.",
-        "canonNotes":  ""
+        "canonNotes":  "Beakabou hid the Orb in his role as appointed guardian of the Forest region, after the island was created - not during the Great War. Confirmed by Aidan 2026-08-01."
     },
     {
         "id":  "TL-060",
@@ -567,7 +568,7 @@
         "locations":  "LOC-PILLAR-ECHOES,LOC-CHOIR-STONES",
         "artifacts":  "ART-ORB-MOUNTAIN,ART-CHOIR-STONES",
         "summary":  "A catastrophe strikes the Mountain Region. Galsage performs the Song of Silence, raising the Orb\u0027s sanctuary beyond ordinary reach. The act destroys its body, whose remains become the Choir Stones.",
-        "canonNotes":  "Story transferred from the proposed character Korranok to Galsage per the canon decision."
+        "canonNotes":  "SETTLED 2026-08-01 by Aidan: Galsage is the Mountain Chaser. Korranok was a proposed name and is not canon. Card #86 (Galsage) was already the deciding authority - printed cards are the hardest canon."
     },
     {
         "id":  "TL-070",
@@ -717,5 +718,59 @@
         "imageCaption":  "",
         "publishDate":  "",
         "isFinalChapter":  ""
+    },
+    {
+        "id":  "ART-CORE-ORB",
+        "type":  "artifact",
+        "name":  "The Original Core Orb",
+        "kind":  "Core Orb",
+        "region":  "",
+        "era":  "The Ancient Age",
+        "sustains":  "All life, balance and creative energy in the original Geoverse",
+        "status":  "Shattered",
+        "summary":  "The single ancient Orb that sustained the original Geopal civilisation before the eight regions existed. Not a collectible object and not battle energy - the energetic heart of the old world. Mallathork enslaved Geopals to mine it, distorting its energy; it was damaged beyond recovery and shattered, ending the Ancient Age. Its eight surviving fragments became the Regional Core Orbs.",
+        "canonNotes":  "Confirmed canon. The Orb was never meant to be mined or weaponised - that is the central lesson the modern era risks repeating with Treasure Orbs."
+    },
+    {
+        "id":  "CH-GOOD-BEING",
+        "type":  "character",
+        "name":  "The Good-Being",
+        "aliases":  "",
+        "kind":  "Ancient Force",
+        "region":  "",
+        "era":  "The Ancient Age",
+        "role":  "The benevolent spiritual presence that watched over the Geoverse",
+        "status":  "Imprisoned",
+        "summary":  "A higher spiritual intelligence representing life, balance, freedom and natural harmony, who watched over the Geoverse alongside the original Core Orb. Mallathork trapped it in another dimension. Imprisoned but not powerless, it sent spiritually empowered Orbs to eight worthy Geopals, awakening them as the Chasers - the act that ultimately defeated him.",
+        "canonNotes":  "Confirmed canon. Communicates through visions, energy and spiritually empowered Orbs rather than physical presence."
+    },
+    {
+        "id":  "ART-HUSKS",
+        "type":  "artifact",
+        "name":  "Mallathork\u0027s Orb Husks",
+        "kind":  "Seal",
+        "region":  "",
+        "era":  "The Ancient Age",
+        "sustains":  "",
+        "status":  "Divided among the Chasers",
+        "summary":  "The ancient Orb husks into which the Eight Chasers divided and sealed Mallathork\u0027s remaining essence, having found they could not destroy him. Each Chaser became responsible for one portion, so that no single individual holds everything needed to release him.",
+        "canonNotes":  "Confirmed canon: Mallathork was contained, not destroyed. Husks are said to brainwash ordinary Geopals who come too close."
+    },
+    {
+        "id":  "CH-URSULO",
+        "type":  "character",
+        "name":  "Ursulo",
+        "aliases":  "",
+        "era":  "The Comet Era",
+        "region":  "Ice",
+        "kind":  "Geopal",
+        "role":  "",
+        "status":  "Active",
+        "cardId":  "20",
+        "awakensFrom":  "",
+        "awakensTo":  "",
+        "firstAppearance":  "",
+        "summary":  "An Ice-region Geopal. Card #20, Basic stage, All Rounder style.",
+        "canonNotes":  "Matches card #20. NOTE: Aidan and Cawbird\u0027s illustration files both spell it \"Ursolo\"; cards.json and the merge sheet say \"Ursulo\". PARKED 2026-08-01 at Aidan\u0027s call - not worth fixing now. The lore row follows the card so the continuity gate stays green."
     }
 ]
