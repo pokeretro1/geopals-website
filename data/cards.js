@@ -2397,7 +2397,7 @@ window.GEOPALS_CARDS = [
         "illustrator":  "Cawbird",
         "artType":  "",
         "borderColour":  "Orange",
-        "holo":  "",
+        "holo":  "Holo",
         "image":  "assets/cards/Card_84.jpg",
         "thumb":  "assets/cards/thumb/Card_84.jpg",
         "artFile":  "",
