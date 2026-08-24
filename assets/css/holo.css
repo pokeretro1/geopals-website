@@ -1,0 +1,149 @@
+/* Animated holo.
+ *
+ * The specification for this effect is
+ * knowledge/process/core/card-template/tools/holo-masks.md, section
+ * "Animating the holo on screen", and the reference implementation is
+ * design-a-set/tools/scripts/holo-card-preview.html.
+ *
+ * Every value below is ported from that reference unchanged. If you change one,
+ * change the document too, or the two will disagree and the document is the one
+ * people trust.
+ *
+ * The one rule: every colour comes out of cosmos-holo.jpg. Nothing here may
+ * introduce a hue. White light is allowed, because light is white.
+ */
+
+@property --breath { syntax: '<number>'; inherits: false; initial-value: 1; }
+
+.holo-stack {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;          /* keeps the blending inside the card */
+  overflow: hidden;
+  --strength: .6;              /* the house setting, Aidan 2026-08-05 */
+  --par: 1;                    /* parallax scale: 1 at detail size, less on a tile */
+  --px: 50%;
+  --py: 40%;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform .12s ease-out;
+  will-change: transform;
+}
+
+.holo-stack > * { position: absolute; inset: 0; width: 100%; height: 100%; }
+.holo-stack .holo-base { object-fit: cover; display: block; }
+
+/* Every effect layer is clipped by the foil plate, so none of them can reach
+   the character or the text. The mask is the plate with its brightness baked
+   into transparency; see build-holo-web-assets.ps1. */
+.holo-fx {
+  pointer-events: none;
+  -webkit-mask-image: var(--m); mask-image: var(--m);
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+}
+
+/* 1 - the print recipe, unchanged: the pattern in Hard Light at 0.6 */
+.holo-cosmos {
+  background-image: var(--pat);
+  background-size: calc(150% * var(--breath, 1));
+  background-position: calc(50% + (var(--parx, 0px) * var(--par)))
+                       calc(50% + (var(--pary, 0px) * var(--par)));
+  mix-blend-mode: hard-light;
+  opacity: var(--strength);
+  animation: holo-breathe 24s ease-in-out infinite;
+}
+@keyframes holo-breathe { 0%, 100% { --breath: 1 } 50% { --breath: 1.09 } }
+
+/* 2 - the same pattern again, revealed only inside a travelling band of light.
+       The band multiplies into the pattern first, so outside it the layer is
+       black and Color Dodge leaves the card alone. */
+.holo-glint {
+  background-image:
+    linear-gradient(103deg, #000 30%, #6b6b6b 42%, #ffffff 50%, #6b6b6b 58%, #000 70%),
+    var(--pat);
+  background-size: 300% 300%, 158%;
+  background-position: 200% 50%,
+                       calc(50% + (var(--parx2, 0px) * var(--par)))
+                       calc(50% + (var(--pary2, 0px) * var(--par)));
+  background-blend-mode: multiply;
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--strength) * .85);
+  animation: holo-glint 6.4s cubic-bezier(.5, 0, .5, 1) infinite;
+}
+@keyframes holo-glint {
+  0%, 8% {
+    background-position: 210% 50%,
+      calc(50% + (var(--parx2, 0px) * var(--par))) calc(50% + (var(--pary2, 0px) * var(--par)));
+  }
+  92%, 100% {
+    background-position: -70% 50%,
+      calc(50% + (var(--parx2, 0px) * var(--par))) calc(50% + (var(--pary2, 0px) * var(--par)));
+  }
+}
+
+/* 3 - the light source. Neutral and weak, so the colour still comes from the pattern. */
+.holo-spec {
+  background: linear-gradient(103deg,
+    transparent 40%, rgba(255,255,255,.42) 48%, rgba(255,255,255,.7) 50%,
+    rgba(255,255,255,.42) 52%, transparent 60%);
+  background-size: 300% 300%;
+  mix-blend-mode: soft-light;
+  opacity: calc(var(--strength) * .9);
+  animation: holo-sweep 6.4s cubic-bezier(.5, 0, .5, 1) infinite;
+}
+@keyframes holo-sweep {
+  0%, 8%    { background-position: 210% 50% }
+  92%, 100% { background-position: -70% 50% }
+}
+
+/* 4 - a highlight under the pointer, so tilting feels physical */
+.holo-glare {
+  background: radial-gradient(circle at var(--px) var(--py),
+    rgba(255,255,255,.55) 0%, rgba(255,255,255,.14) 26%, transparent 55%);
+  mix-blend-mode: screen;
+  opacity: calc(var(--strength) * .75);
+  transition: opacity .2s;
+}
+
+/* --- where it sits --- */
+
+.gal-shot { perspective: 1400px; }
+.gal-shot .holo-stack { border-radius: inherit; }
+
+.gal-modal-art-wrap {
+  position: relative;
+  perspective: 1400px;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1630 / 2220;
+  box-shadow: 0 8px 30px rgba(0,0,0,.5);
+}
+
+/* The still frame underneath. It is what shows before the effect is built and
+   if anything fails to load, so it must never be removed. */
+.gal-modal-art-wrap > .holo-still { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.gal-holo-hint {
+  margin: .5rem 0 0;
+  font-size: .74rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* At rest a foil card still LOOKS foiled. Layer 1 is the printed recipe, so the
+   resting state is the real card; only the light stops. The glint and spec
+   keyframes begin off the card, so pausing at frame zero parks them out of sight
+   rather than freezing a bright band mid-sweep. */
+.holo-stack.rest .holo-cosmos,
+.holo-stack.rest .holo-glint,
+.holo-stack.rest .holo-spec { animation-play-state: paused; }
+.holo-stack.rest .holo-glare { opacity: 0; }
+
+/* Somebody who has asked their device for less animation should not have to ask
+   twice. The pattern stays, the movement goes. */
+@media (prefers-reduced-motion: reduce) {
+  .holo-cosmos, .holo-glint, .holo-spec { animation: none; }
+  .holo-glint, .holo-spec, .holo-glare { display: none; }
+  .holo-stack { transition: none; transform: none; }
+}

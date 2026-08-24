@@ -1,0 +1,232 @@
+/* Geopals - card gallery.
+   Layered on top of main.css, which owns the palette and the site chrome.
+   This file only styles the gallery page. */
+
+.gal {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 4vw, 2.5rem) 5rem;
+}
+
+.gal-head { margin-bottom: 1.75rem; }
+.gal-head h1 { margin-bottom: .35rem; }
+.gal-lede { color: var(--text-dim); max-width: 58ch; margin: 0; }
+
+/* ---------- controls ---------- */
+
+.gal-controls {
+  position: sticky;
+  top: 66px;
+  z-index: 10;
+  background: rgba(14, 17, 22, .92);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: .9rem 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.gal-search {
+  width: 100%;
+  padding: .7rem .95rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-sunk);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.gal-search::placeholder { color: var(--text-dim); }
+.gal-search:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+
+.gal-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .75rem;
+  align-items: center;
+}
+.gal-filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .82rem;
+  color: var(--text-dim);
+}
+.gal-filters select {
+  font: inherit;
+  font-size: .88rem;
+  color: var(--text);
+  background: var(--bg-sunk);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: .4rem .55rem;
+}
+.gal-filters select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.gal-actions { margin-left: auto; display: flex; align-items: center; gap: .9rem; }
+.gal-count { font-size: .85rem; color: var(--text-dim); white-space: nowrap; }
+.gal-clear {
+  font: inherit; font-size: .85rem;
+  color: var(--text-dim);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: .35rem .7rem;
+  cursor: pointer;
+}
+.gal-clear:hover { color: var(--text); border-color: var(--text-dim); }
+
+/* ---------- the gallery ---------- */
+
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  gap: clamp(.8rem, 2vw, 1.4rem);
+}
+@media (min-width: 480px)  { .gal-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 760px)  { .gal-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1040px) { .gal-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (max-width: 479px)  { .gal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.gal-card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+}
+
+.gal-shot {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-raised);
+  aspect-ratio: 1630 / 2220;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.gal-card:hover .gal-shot,
+.gal-card:focus-visible .gal-shot {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.55);
+}
+.gal-card:focus-visible { outline: none; }
+.gal-card:focus-visible .gal-shot { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.gal-shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.gal-no {
+  position: absolute; top: .4rem; left: .4rem;
+  font-size: .68rem; font-weight: 700; letter-spacing: .04em;
+  background: rgba(10,13,18,.82); color: var(--text);
+  border-radius: 5px; padding: .12rem .38rem;
+}
+.gal-holo {
+  position: absolute; top: .4rem; right: .4rem;
+  font-size: .62rem; font-weight: 700; letter-spacing: .07em;
+  background: linear-gradient(110deg, #f2b23e, #35c39a, #7aa8ff);
+  color: #06251c; border-radius: 5px; padding: .12rem .38rem;
+}
+
+.gal-meta { padding: .5rem .15rem 0; }
+.gal-name { font-weight: 650; font-size: .92rem; line-height: 1.25; }
+.gal-sub  { font-size: .76rem; color: var(--text-dim); display: flex; gap: .35rem; align-items: center; flex-wrap: wrap; }
+
+.dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex: none; }
+
+.gal-empty { text-align: center; color: var(--text-dim); padding: 3rem 1rem; }
+
+/* ---------- detail overlay ---------- */
+
+.gal-modal {
+  border: 0; padding: 0;
+  background: transparent;
+  max-width: min(980px, 94vw);
+  max-height: 92vh;
+  color: var(--text);
+}
+.gal-modal::backdrop { background: rgba(4,6,9,.78); backdrop-filter: blur(3px); }
+
+.gal-modal-in {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  max-height: 92vh;
+  overflow: auto;
+}
+@media (max-width: 720px) { .gal-modal-in { grid-template-columns: minmax(0, 1fr); } }
+
+.gal-modal-art { width: 100%; border-radius: 10px; display: block; box-shadow: 0 8px 30px rgba(0,0,0,.5); }
+
+.gal-modal h2 { margin: 0 0 .15rem; font-size: 1.6rem; }
+.gal-modal-kicker { color: var(--text-dim); font-size: .9rem; margin: 0 0 1.1rem; display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+
+.pillbox { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.1rem; }
+.pill {
+  font-size: .74rem; font-weight: 650; letter-spacing: .03em;
+  border-radius: 999px; padding: .2rem .6rem;
+  background: var(--bg-sunk); color: var(--text-dim); border: 1px solid var(--line);
+}
+.pill-rare { background: var(--accent-2); color: #2a1c00; border-color: transparent; }
+.pill-holo { background: linear-gradient(110deg, #f2b23e, #35c39a, #7aa8ff); color: #06251c; border-color: transparent; }
+
+.ability { border-left: 3px solid var(--line); padding: .1rem 0 .1rem .8rem; margin-bottom: 1rem; }
+.ability-tag { font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); font-weight: 700; }
+.ability-name { font-weight: 650; margin: .1rem 0 .2rem; }
+.ability-cost { font-weight: 400; color: var(--text-dim); font-size: .85rem; }
+.ability p { margin: 0; font-size: .93rem; }
+
+.gal-stats { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: .4rem; }
+.gal-stats th { text-align: left; font-weight: 500; color: var(--text-dim); padding: .32rem .8rem .32rem 0; white-space: nowrap; vertical-align: top; width: 1%; }
+.gal-stats td { padding: .32rem 0; }
+
+.gal-close {
+  position: absolute; top: .55rem; right: .7rem;
+  background: var(--bg-sunk); color: var(--text-dim);
+  border: 1px solid var(--line); border-radius: 8px;
+  width: 30px; height: 30px; line-height: 1; font-size: 1.05rem; cursor: pointer;
+}
+.gal-close:hover { color: var(--text); }
+.gal-modal-wrap { position: relative; }
+
+/* --- character artwork in the detail view, added 2026-08-08 ---
+   The burst designs have an opaque WHITE background, so on a dark page they
+   would read as a white box. Rather than knocking the white out, which leaves a
+   halo where the burst fades, the plate is tinted with the card's region colour
+   and the artwork is multiplied into it. The white disappears into the tint and
+   the glow keeps its soft edge. */
+.gal-char { margin: .9rem 0 0; }
+.gal-char-plate {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  aspect-ratio: 1;
+  box-shadow: 0 4px 18px rgba(0,0,0,.4);
+}
+.gal-char-plate::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--c, #3a4557);
+  opacity: .13;
+}
+.gal-char-plate img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.gal-char figcaption {
+  margin-top: .4rem;
+  font-size: .74rem;
+  color: var(--text-dim);
+  text-align: center;
+}
