@@ -27,7 +27,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "1",
         "characterImage":  "character images/01 - Zippo.png"
     },
@@ -56,7 +56,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "2",
         "characterImage":  "character images/02 - Infernex.png"
     },
@@ -85,7 +85,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "3",
         "characterImage":  "character images/03 - Cindragon.png"
     },
@@ -114,7 +114,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "4",
         "characterImage":  "character images/04 - Tadpearl.png"
     },
@@ -143,7 +143,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "5",
         "characterImage":  "character images/05 - Volfrog.png"
     },
@@ -172,7 +172,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "6",
         "characterImage":  "character images/06 - Nilgie.png"
     },
@@ -201,7 +201,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "7",
         "characterImage":  "character images/07 - Toadtem.png"
     },
@@ -230,7 +230,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "8",
         "characterImage":  "character images/08 - Mechaglyph.jpeg"
     },
@@ -259,7 +259,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "9",
         "characterImage":  "character images/09 - Troja.png"
     },
@@ -288,7 +288,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "10",
         "characterImage":  "character images/10 - Skippy.JPG"
     },
@@ -317,7 +317,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "11",
         "characterImage":  "character images/11 - Lilac.png"
     },
@@ -346,7 +346,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "12",
         "characterImage":  "character images/12 - Telesage.png"
     },
@@ -375,7 +375,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "13",
         "characterImage":  "character images/13 - Inji.JPG"
     },
@@ -404,7 +404,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "14",
         "characterImage":  "character images/14 - Jurra.png"
     },
@@ -433,7 +433,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "15",
         "characterImage":  "character images/15 - Lazin.png"
     },
@@ -462,7 +462,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "16",
         "characterImage":  "character images/16 - Laxin.png"
     },
@@ -491,7 +491,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "17",
         "characterImage":  "character images/17 - Comet.png"
     },
@@ -520,7 +520,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "18",
         "characterImage":  "character images/18 - Astracoon.png"
     },
@@ -549,7 +549,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "19",
         "characterImage":  "character images/19 - Empereor.png"
     },
@@ -578,7 +578,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "20",
         "characterImage":  "character images/20 - Ursulo.png"
     },
@@ -607,7 +607,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "21",
         "characterImage":  "character images/21 - Zippo.png"
     },
@@ -636,7 +636,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "22",
         "characterImage":  "character images/22 - Sheathix.png"
     },
@@ -665,7 +665,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "23",
         "characterImage":  "character images/23 - Gardeon.png"
     },
@@ -694,7 +694,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "24",
         "characterImage":  "character images/24 - Reptail.png"
     },
@@ -723,7 +723,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "25",
         "characterImage":  "character images/25 - Euko.png"
     },
@@ -752,7 +752,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "26",
         "characterImage":  "character images/26 - Nilgie.png"
     },
@@ -781,7 +781,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "27",
         "characterImage":  "character images/27 - Lagoona.png"
     },
@@ -810,7 +810,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "28",
         "characterImage":  "character images/28 - Medeepa.png"
     },
@@ -839,7 +839,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "29",
         "characterImage":  "character images/29 - Cupla.png"
     },
@@ -868,7 +868,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "30",
         "characterImage":  "character images/30 - Slemo.png"
     },
@@ -897,7 +897,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "31",
         "characterImage":  "character images/31 - Dralcora.png"
     },
@@ -926,7 +926,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "32",
         "characterImage":  "character images/32 - Aroclard.png"
     },
@@ -955,7 +955,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "33",
         "characterImage":  "character images/33 - Aloka.png"
     },
@@ -984,7 +984,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "34",
         "characterImage":  "character images/34 - Gripull.png"
     },
@@ -1013,7 +1013,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "35",
         "characterImage":  "character images/35 - Shadrex.png"
     },
@@ -1042,7 +1042,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "36",
         "characterImage":  "character images/36 - Skippy.JPG"
     },
@@ -1071,7 +1071,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "37",
         "characterImage":  "character images/37 - Shadusk.png"
     },
@@ -1100,7 +1100,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "38",
         "characterImage":  "character images/38 - Moonada.png"
     },
@@ -1129,7 +1129,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "39",
         "characterImage":  "character images/39 - Descarfo.png"
     },
@@ -1158,7 +1158,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "40",
         "characterImage":  "character images/40 - Imphant.png"
     },
@@ -1187,7 +1187,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "41",
         "characterImage":  "character images/41 - Drophant.png"
     },
@@ -1216,7 +1216,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "42",
         "characterImage":  "character images/42 - Chargaphant.png"
     },
@@ -1245,7 +1245,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1274,7 +1274,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1303,7 +1303,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1332,7 +1332,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1361,7 +1361,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1390,7 +1390,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1419,7 +1419,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1448,7 +1448,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1477,7 +1477,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1506,7 +1506,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1535,7 +1535,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1564,7 +1564,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1593,7 +1593,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1622,7 +1622,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1651,7 +1651,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1680,7 +1680,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1709,7 +1709,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1738,7 +1738,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1767,7 +1767,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1796,7 +1796,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1825,7 +1825,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1854,7 +1854,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1883,7 +1883,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1912,7 +1912,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1941,7 +1941,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1970,7 +1970,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -1999,7 +1999,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2028,7 +2028,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2057,7 +2057,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2086,7 +2086,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2115,7 +2115,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2144,7 +2144,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2173,7 +2173,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2202,7 +2202,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2231,7 +2231,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2260,7 +2260,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2289,7 +2289,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2318,7 +2318,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2347,7 +2347,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2376,7 +2376,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2405,7 +2405,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2434,7 +2434,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "43",
         "characterImage":  "character images/43 - Beakabou.png"
     },
@@ -2463,7 +2463,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "44",
         "characterImage":  "character images/44 - Galsage.png"
     },
@@ -2492,7 +2492,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "45",
         "characterImage":  "character images/45 - Metrark.png"
     },
@@ -2521,7 +2521,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "46",
         "characterImage":  "character images/46 - Sharlitan.png"
     },
@@ -2550,7 +2550,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "47",
         "characterImage":  "character images/47 - Frolick.png"
     },
@@ -2579,7 +2579,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2608,7 +2608,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2637,7 +2637,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2666,7 +2666,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2695,7 +2695,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "",
         "characterImage":  ""
     },
@@ -2724,7 +2724,7 @@ window.GEOPALS_CARDS = [
         "sample":  "false",
         "firstEdition":  "true",
         "setCode":  "S1",
-        "setSize":  "90",
+        "setSize":  "78",
         "characterNumber":  "48",
         "characterImage":  "character images/48 - Lumivue.png",
         "lore":  "It is said that Lumivue can see into a realm separate from the physical, where it gains insights into things that have been and will be. Known as the Geopal of vision, it remains hidden like all chasers, waiting and watching for the right moment to reveal itself."
